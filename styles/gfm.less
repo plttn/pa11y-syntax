@@ -1,0 +1,166 @@
+@import "colors";
+
+.source.gfm {
+  .markup {
+    -webkit-font-smoothing: auto;
+    &.heading {
+      //color: @pubster-color-other-constant;
+      font-weight: bold;
+      &.heading-1 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 100);
+      }
+      &.heading-2 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 90);
+      }
+      &.heading-3 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 75);
+      }
+      &.heading-4 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 60);
+      }
+      &.heading-5 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 40);
+      }
+      &.heading-6 {
+        color: mix(@pubster-color-other-constant, @syntax-text-color, 30);
+      }
+    }
+
+    &.link {
+      color: @pubster-color-variable;
+    }
+
+    &.bold {
+      color: desaturate(@pubster-color-other-constant, 10%);
+      font-weight: bold;
+    }
+
+    &.changed {
+      color: @pubster-color-header;
+    }
+
+    &.deleted {
+      color: @pubster-color-support-function;
+    }
+
+    &.italic {
+      color: @pubster-color-variable;
+      font-style: italic;
+    }
+
+    &.inserted {
+      color: @pubster-color-string;
+    }
+
+    &.list {
+      color: @pubster-color-constant;
+    }
+
+    &.quote {
+      color: @pubster-color-function;
+    }
+
+    &.raw.inline {
+      color: @pubster-color-numeric;
+    }
+
+    &.raw.gfm.support.gfm {
+      color: @pubster-color-header;
+    }
+
+    &.strike.gfm {
+      color: @pubster-color-keyword;
+      text-decoration: line-through;
+      //-webkit-text-decoration-style: dashed; IMPLEMENTED SOON, KEEPING IN TO REMIND ME
+    }
+  }
+
+  .comment.hr.gfm {
+    color: @pubster-color-string;
+  }
+
+  .comment.quote.gfm {
+    .support.quote.gfm{
+      font-style: normal;
+      color: @syntax-color-renamed;
+      opacity: 1;
+    }
+    font-style: italic;
+    color: @syntax-text-color;
+    opacity: 1;
+  }
+
+  .raw.gfm {
+    .support.gfm{
+      color: @pubster-color-header;
+      font-style: italic;
+    }
+    color: @pubster-color-constant;
+  }
+
+  .support.gfm {
+    color: @pubster-color-header;
+    font-style: italic;
+  }
+
+  .markup.code {
+    //color: @pubster-color-header;
+    //font-style: italic;
+  }
+
+  .raw.gfm.support.gfm {
+    color: @pubster-color-function;
+  }
+
+  .link .entity {
+    color: @pubster-color-header;
+  }
+  .critic.gfm {
+    .addition {
+      color: @pubster-color-string;
+    }
+    .deletion {
+      color: @pubster-color-other-constant;
+    }
+    .substitution {
+      color: @pubster-color-function;
+    }
+    .comment {
+      font-style: normal;
+      color: @pubster-color-constant;
+    }
+    .highlight {
+      color: @pubster-color-keyword;
+    }
+  }
+  .comment.block.gfm {
+    font-style: italic;
+    color: @pubster-color-comment;
+  }
+}
+
+.source.gfm.critic.gfm.comment {
+  font-style: normal;
+  color: @pubster-color-constant;
+}
+
+.list.gfm {
+  color: @pubster-color-constant;
+}
+
+//criticmarkup fixes
+.critic.gfm.addition {
+  color: @pubster-color-string;
+}
+.critic.gfm.deletion {
+  color: @pubster-color-other-constant;
+}
+.critic.gfm.substitution {
+  color: @pubster-color-function;
+}
+.critic.gfm.comment {
+  color: @pubster-color-constant;
+}
+.critic.gfm.highlight {
+  color: @pubster-color-keyword;
+}

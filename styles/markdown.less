@@ -1,0 +1,161 @@
+@import "colors";
+
+// 3.
+// Define custom markdown styles
+// ----------------------------------------
+// Below is an incomplete list of markdown elements you might want to style
+// differently from the default markup elements defined above. All styles are
+// empty, primarily to give you an idea of what's possible.
+
+.text.md {
+  .md {
+
+    &.heading {
+      > .punctuation {}
+      &.empty {
+        .punctuation {}
+      }
+    }
+
+    &.hr {
+      color: @pubster-color-string;
+    }
+    &.quote {}
+
+    &.link {
+      color: @pubster-color-variable;
+      .string {
+        color: @pubster-color-header;
+      }
+      &.text {}
+      &.destination {
+        .uri {}
+        text-decoration: underline;
+      }
+      &.label {}
+      &.title {
+        font-style: italic;
+      }
+      &.auto {
+        &.email {}
+      }
+      &.reference {
+        &.abbreviation {}
+      }
+      &.footnote {
+        &.reference {}
+        &.definition {}
+      }
+    }
+
+    &.gfm {
+      &.reference {
+        .mention {}
+        .issue {}
+        .user {}
+        .repository {}
+        .sha {}
+
+        &.class {}
+        &.method {
+          &.instance {}
+          &.class {}
+        }
+      }
+
+      &.emoji {}
+    }
+
+    &.constant {
+      &.entity {}
+      &.escape {}
+      &.line-break {}
+    }
+
+    &.reference {
+      &.class {}
+      &.link {}
+    }
+
+    &.list {
+      > .punctuation {
+        &.checkbox {}
+      }
+
+      &.unordered {}
+      &.ordered {}
+      &.empty {}
+
+      &.task {
+        &.completed {}
+      }
+
+      &.definition {}
+    }
+
+    &.code {
+      &:not(.fenced) {
+        background: fade(@_neutral, 10%)
+      }
+
+      &.fenced {
+        .punctuation.md {
+          color: @pubster-color-header;
+          font-style: italic;
+        }
+        &.info {}
+      }
+
+      &.raw {}
+    }
+
+    &.constant {
+      &.language {
+        color: @pubster-color-header;
+        font-style: italic;
+      }
+    }
+
+    &.emphasis {
+      &:not(.strong) {}
+
+      &:not(.strong) .strong {
+        font-style: italic;
+      }
+    }
+
+    &.strong {}
+
+    &.table {
+      > .punctuation {
+        &.alignment {}
+      }
+    }
+
+    &.strike {}
+
+    &.critic {
+      &.addition {
+
+    }
+      &.deletion {}
+      &.comment {}
+      &.highlight {}
+      &.substitution {}
+    }
+
+    &.special-attributes {}
+
+    &.attribute {
+      &.special {
+        &.other {}
+        &.id {}
+        &.class {}
+      }
+      .value {
+        &.string {}
+        &.storage {}
+      }
+    }
+  }
+}

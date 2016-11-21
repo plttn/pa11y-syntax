@@ -2,7 +2,7 @@
   "name": "pa11y",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "An Atom syntax theme using the a11y colors from clrs.cc",
   "keywords": [
     "syntax",
     "theme"

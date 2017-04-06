@@ -18,14 +18,14 @@
     }
 
     &.hr {
-      color: @pubster-color-string;
+      color: yellow;
     }
     &.quote {}
 
     &.link {
-      color: @pubster-color-variable;
+      color: yellow;
       .string {
-        color: @pubster-color-header;
+        color: yellow;
       }
       &.text {}
       &.destination {
@@ -95,12 +95,12 @@
 
     &.code {
       &:not(.fenced) {
-        background: fade(@_neutral, 10%)
+        background: fade(yellow, 10%)
       }
 
       &.fenced {
         .punctuation.md {
-          color: @pubster-color-header;
+          color: yellow;
           font-style: italic;
         }
         &.info {}
@@ -111,7 +111,7 @@
 
     &.constant {
       &.language {
-        color: @pubster-color-header;
+        color: yellow;
         font-style: italic;
       }
     }

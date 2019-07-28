@@ -1,86 +1,87 @@
 @import "colors";
 
-.source.gfm {
-  .markup {
+.syntax--source.syntax--gfm {
+  .syntax--markup {
     -webkit-font-smoothing: auto;
-    &.heading {
+    &.syntax--heading {
       //color: yellow;
       font-weight: bold;
-      &.heading-1 {
+      &.syntax--heading-1 {
         color: mix(yellow, @syntax-text-color, 100);
       }
-      &.heading-2 {
+      &.syntax--heading-2 {
         color: mix(yellow, @syntax-text-color, 90);
       }
-      &.heading-3 {
+      &.syntax--heading-3 {
         color: mix(yellow, @syntax-text-color, 75);
       }
-      &.heading-4 {
+      &.syntax--heading-4 {
         color: mix(yellow, @syntax-text-color, 60);
       }
-      &.heading-5 {
+      &.syntax--heading-5 {
         color: mix(yellow, @syntax-text-color, 40);
       }
-      &.heading-6 {
+      &.syntax--heading-6 {
         color: mix(yellow, @syntax-text-color, 30);
       }
     }
 
-    &.link {
+    &.syntax--link {
       color: yellow;
     }
 
-    &.bold {
+    &.syntax--bold {
       color: desaturate(yellow, 10%);
       font-weight: bold;
     }
 
-    &.changed {
+    &.syntax--changed {
       color: yellow;
     }
 
-    &.deleted {
+    &.syntax--deleted {
       color: yellow;
     }
 
-    &.italic {
+    &.syntax--italic {
       color: yellow;
       font-style: italic;
     }
 
-    &.inserted {
+    &.syntax--inserted {
       color: yellow;
     }
 
-    &.list {
+    &.syntax--list {
       color: yellow;
     }
 
-    &.quote {
+    &.syntax--quote {
       color: yellow;
     }
 
-    &.raw.inline {
+    &.syntax--raw.syntax--inline {
       color: yellow;
     }
 
-    &.raw.gfm.support.gfm {
+    &.syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
       color: yellow;
     }
 
-    &.strike.gfm {
+    &.syntax--strike.syntax--gfm {
       color: yellow;
       text-decoration: line-through;
+      text-decoration-style: dashed;
       //-webkit-text-decoration-style: dashed; IMPLEMENTED SOON, KEEPING IN TO REMIND ME
     }
   }
 
-  .comment.hr.gfm {
+  .syntax--comment.syntax--hr.syntax--gfm {
     color: yellow;
   }
 
-  .comment.quote.gfm {
-    .support.quote.gfm{
+  .syntax--comment.syntax--quote.syntax--gfm {
+    .syntax--support.syntax--quote.syntax--gfm{
       font-style: normal;
       color: @syntax-color-renamed;
       opacity: 1;
@@ -90,77 +91,77 @@
     opacity: 1;
   }
 
-  .raw.gfm {
-    .support.gfm{
+  .syntax--raw.syntax--gfm {
+    .syntax--support.syntax--gfm{
       color: yellow;
       font-style: italic;
     }
     color: yellow;
   }
 
-  .support.gfm {
+  .syntax--support.syntax--gfm {
     color: yellow;
     font-style: italic;
   }
 
-  .markup.code {
+  .syntax--markup.syntax--code {
     //color: yellow;
     //font-style: italic;
   }
 
-  .raw.gfm.support.gfm {
+  .syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
     color: yellow;
   }
 
-  .link .entity {
+  .syntax--link .syntax--entity {
     color: yellow;
   }
-  .critic.gfm {
-    .addition {
+  .syntax--critic.syntax--gfm {
+    .syntax--addition {
       color: yellow;
     }
-    .deletion {
+    .syntax--deletion {
       color: yellow;
     }
-    .substitution {
+    .syntax--substitution {
       color: yellow;
     }
-    .comment {
+    .syntax--comment {
       font-style: normal;
       color: yellow;
     }
-    .highlight {
+    .syntax--highlight {
       color: yellow;
     }
   }
-  .comment.block.gfm {
+  .syntax--comment.syntax--block.syntax--gfm {
     font-style: italic;
     color: yellow;
   }
 }
 
-.source.gfm.critic.gfm.comment {
+.syntax--source.syntax--gfm.syntax--critic.syntax--gfm.syntax--comment {
   font-style: normal;
   color: yellow;
 }
 
-.list.gfm {
+.syntax--list.syntax--gfm {
   color: yellow;
 }
 
 //criticmarkup fixes
-.critic.gfm.addition {
+.syntax--critic.syntax--gfm.syntax--addition {
   color: yellow;
 }
-.critic.gfm.deletion {
+.syntax--critic.syntax--gfm.syntax--deletion {
   color: yellow;
 }
-.critic.gfm.substitution {
+.syntax--critic.syntax--gfm.syntax--substitution {
   color: yellow;
 }
-.critic.gfm.comment {
+.syntax--critic.syntax--gfm.syntax--comment {
   color: yellow;
 }
-.critic.gfm.highlight {
+.syntax--critic.syntax--gfm.syntax--highlight {
   color: yellow;
 }

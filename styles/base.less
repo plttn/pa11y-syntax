@@ -1,74 +1,74 @@
 @import "syntax-variables";
 //specific styling
 
-.comment:not(.gfm) { //Keeps CriticMarkup in GFM  from being italics
+.syntax--comment:not(.gfm) { //Keeps CriticMarkup in GFM  from being italics
   font-style: italic;
   color: @gray;
 }
 
-.keyword, .storage {
+.syntax--keyword, .syntax--storage {
   color: @blue;
 }
 
-.entity.name.function, .keyword.other.name-of-parameter.objc {
+.syntax--entity.syntax--name.syntax--function, .syntax--keyword.syntax--other.syntax--name-of-parameter.syntax--objc {
   color: @orange;
 }
 
-.entity.name {
+.snytax--entity.syntax--name {
   color: @blue;
 }
 
-.constant.numeric {
+.snytax--constant.syntax--numeric {
   color: @blue;
 }
 
-.variable.language, .variable.other {
+.syntax--variable.syntax--language, .snytax--variable.syntax--other {
   color: @blue;
 }
 
-.constant {
+.syntax--constant {
   color: @red;
 }
 
-.variable.other.constant {
+.syntax--variable.syntax--other.syntax--constant {
   color: @blue;
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
 	color: @red;
 }
 
-.string {
+.syntax--string {
   color: @fuschia;
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: @blue;
 }
 
-.support.type {
+.syntax--support.syntax--type {
   color: @aqua;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: @blue;
 }
 
-.meta.tag, .declaration.tag, .entity.name.tag, .entity.other.attribute-name {
+.syntax--meta.syntax--tag, .syntax--declaration.syntax--tag, .syntax--entity.syntax--name.syntax--tag, .syntax--entity.syntax--other.syntax--attribute-name {
   color: @blue;
 }
 
-.invalid {
+.syntax--invalid {
   color: #FFFFFF;
   background-color: #CC0000;
 }
 
-.constant.character.escaped, .constant.character.escape, .string .source, .string .source.ruby {
+.syntax--constant.syntax--character.syntax--escaped, .syntax--constant.syntax--character.syntax--escape, .syntax--string .syntax--source, .syntax--string .syntax--source.syntax--ruby {
   color: #519F50;
 }
 
 
-.meta.diff.header, .meta.separator.diff, .meta.diff.index, .meta.diff.range {
+.syntax--meta.syntax--diff.syntax--header, .syntax--meta.syntax--separator.syntax--diff, .syntax--meta.syntax--diff.syntax--index, .syntax--meta.syntax--diff.syntax--range {
   background-color: @blue;
 }
 

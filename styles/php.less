@@ -1,17 +1,28 @@
 @import "colors";
 
 .syntax--text.syntax--html.syntax--php{
-  .syntax--meta.syntax--function-call.syntax--php {
-    color: yellow;
+  .syntax--punctuation{
+    color: @syntax-text-color;
+    opacity: .75;
   }
-  .syntax--support.syntax--class.syntax--php {
-    color: yellow;
+  .syntax--sgml{
+    color: @syntax-text-color;
+    opacity: .75;
   }
+   .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+     color: desaturate(@red, 10%);
+   }
 
+  .syntax--entity{
+    color: @yellow;
+  }
+  .syntax--string{
+    color:@green;
+  }
   .syntax--meta.syntax--embedded.syntax--line.syntax--php {
-    background: fade(yellow, 20%);
+    background: fade(@silver, 5%);
   }
   .syntax--punctuation.syntax--section.syntax--embedded {
-    color: yellow;
+    //color: yellow;
   }
 }

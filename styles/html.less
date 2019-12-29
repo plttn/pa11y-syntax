@@ -1,23 +1,29 @@
 @import "colors";
 
-.snytax--text.syntax--html {
-  .syntax--punctuation.syntax--definition.syntax--tag {
+
+.syntax--text.syntax--html{
+  .syntax--punctuation{
     color: @syntax-text-color;
     opacity: .75;
   }
-
-  .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
-    color: desaturate(@aqua, 10%);
+  .syntax--meta{
+    color: @syntax-text-color;
+    //opacity: .75;
   }
-  .syntax--doctype.syntax--html {
-    color: desaturate(@blue, 30%);
-  }
-  .syntax--string.syntax--quoted.syntax--double.syntax--html{
-    color: desaturate(@blue, 30%);
-  }
+   .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+     color: desaturate(@red, 10%);
+   }
 
-}
-
-.syntax--punctuation.syntax--separator.syntax--key-value.syntax--html{
-  color:@aqua;
+  .syntax--entity{
+    color: @yellow;
+  }
+  .syntax--string{
+    color:@green;
+  }
+  .syntax--meta.syntax--embedded.syntax--line.syntax--php {
+    background: fade(@silver, 5%);
+  }
+  .syntax--punctuation.syntax--section.syntax--embedded {
+    //color: yellow;
+  }
 }

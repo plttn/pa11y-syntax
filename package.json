@@ -1,8 +1,8 @@
 {
-  "name": "pa11y",
+  "name": "pa11y-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A theme using the colors from http://clrs.cc/a11y/",
   "keywords": [
     "syntax",
     "theme"

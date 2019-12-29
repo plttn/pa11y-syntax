@@ -1,167 +1,189 @@
 @import "colors";
 
 .syntax--source.syntax--gfm {
-  .syntax--markup {
-    -webkit-font-smoothing: auto;
-    &.syntax--heading {
-      //color: yellow;
-      font-weight: bold;
-    &.syntax--heading-1{
-      color: mix(@blue, @syntax-text-color, 100);
-    }
-    &.syntax--heading-2{
-      color: mix(@blue, @syntax-text-color, 90);
-    }
-    &.syntax--heading-3{
-      color: mix(@blue, @syntax-text-color, 80);
-    }
-    &.syntax--heading-4{
-      color: mix(@blue, @syntax-text-color, 60);
-    }
-    &.syntax--heading-5{
-      color: mix(@blue, @syntax-text-color, 40);
-    }
-    &.syntax--heading-6{
-      color: mix(@blue, @syntax-text-color, 20);
-    }
-    }
+	.syntax--markup {
+		-webkit-font-smoothing: auto;
 
-    &.syntax--link {
-      color: @teal;
-    }
+		&.syntax--heading {
+			font-weight: bold;
 
-    &.syntax--bold {
-      //color: desaturate(yellow, 10%);
-      font-weight: bold;
-    }
+			&.syntax--heading-1 {
+				color: mix(@blue, @syntax-text-color, 100);
+			}
 
-    &.syntax--changed {
-      color: yellow;
-    }
+			&.syntax--heading-2 {
+				color: mix(@blue, @syntax-text-color, 90);
+			}
 
-    &.syntax--deleted {
-      color: yellow;
-    }
+			&.syntax--heading-3 {
+				color: mix(@blue, @syntax-text-color, 80);
+			}
 
-    &.syntax--italic {
-      color: yellow;
-      font-style: italic;
-    }
+			&.syntax--heading-4 {
+				color: mix(@blue, @syntax-text-color, 60);
+			}
 
-    &.syntax--inserted {
-      color: yellow;
-    }
+			&.syntax--heading-5 {
+				color: mix(@blue, @syntax-text-color, 40);
+			}
 
-    &.syntax--list {
-      color: yellow;
-    }
+			&.syntax--heading-6 {
+				color: mix(@blue, @syntax-text-color, 20);
+			}
+		}
 
-    &.syntax--quote {
-      color: yellow;
-    }
+		&.syntax--link {
+			color: @teal;
+		}
 
-    &.syntax--raw.syntax--inline {
-      color: yellow;
-    }
+		&.syntax--bold {
+			font-weight: bold;
+		}
 
-    &.syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
-      color: yellow;
-    }
+		&.syntax--changed {
+		}
 
-    &.syntax--strike.syntax--gfm {
-      color: yellow;
-      text-decoration: line-through;
-      text-decoration-style: dashed;
-      //-webkit-text-decoration-style: dashed; IMPLEMENTED SOON, KEEPING IN TO REMIND ME
+		&.syntax--deleted {}
+
+		&.syntax--italic {
+			font-style: italic;
+		}
+
+		&.syntax--inserted {
+		}
+
+		&.syntax--list {
+			color: @orange;
+		}
+
+		&.syntax--quote {
+		}
+
+		&.syntax--raw.syntax--inline {
+		}
+
+		&.syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
+		}
+
+		&.syntax--strike.syntax--gfm {
+			//color: yellow;
+			//text-decoration: line-through;
+			//text-decoration-style: dashed;
+			//-webkit-text-decoration-style: dashed; IMPLEMENTED SOON, KEEPING IN TO REMIND ME
+		}
+	}
+
+	.syntax--comment.syntax--hr.syntax--gfm {
+		color: @silver;
+	}
+
+	.syntax--comment.syntax--quote.syntax--gfm {
+		.syntax--support.syntax--quote.syntax--gfm {
+			font-style: normal;
+			color: @syntax-color-renamed;
+			opacity: 1;
+		}
+		font-style: italic;
+		color: @syntax-text-color;
+		opacity: 1;
+	}
+
+	.syntax--raw.syntax--gfm {
+		background: fade(@silver, 10%)
+	}
+
+	.syntax--support.syntax--gfm {
+    color: @orange;
+		font-style: italic;
+	}
+
+	.syntax--markup.syntax--code {
+		//color: yellow;
+		//font-style: italic;
+	}
+
+	.syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
+		//color: yellow;
+	}
+
+	.syntax--link .syntax--entity {
+		color: @teal;
+	}
+
+	.syntax--critic.syntax--gfm {
+		.syntax--addition {
+			//color: yellow;
+		}
+
+		.syntax--deletion {
+			//color: yellow;
+		}
+
+		.syntax--substitution {
+			//color: yellow;
+		}
+
+		.syntax--comment {
+			font-style: normal;
+			//color: yellow;
+		}
+
+		.syntax--highlight {
+			//color: yellow;
+		}
+	}
+
+	.syntax--comment.syntax--block.syntax--gfm {
+		font-style: italic;
+		//color: yellow;
+	}
+
+
+  .syntax--punctuation.syntax--definition {
+    .syntax--end.syntax--gfm{
+      	color: @teal;
+      	opacity: 0.5;
     }
+    .syntax--begin.syntax--gfm{
+      	color: @teal;
+      	opacity: 0.5;
+      }
   }
 
-  .syntax--comment.syntax--hr.syntax--gfm {
-    color: @silver;
+  .syntax--punctuation.syntax--definition.syntax--comment.syntax--gfm {
+  	color: @syntax-text-color;
   }
-
-  .syntax--comment.syntax--quote.syntax--gfm {
-    .syntax--support.syntax--quote.syntax--gfm{
-      font-style: normal;
-      color: @syntax-color-renamed;
-      opacity: 1;
-    }
-    font-style: italic;
-    color: @syntax-text-color;
-    opacity: 1;
-  }
-
-  .syntax--raw.syntax--gfm {
-    .syntax--support.syntax--gfm{
-      color: yellow;
-      font-style: italic;
-    }
-    color: yellow;
-  }
-
-  .syntax--support.syntax--gfm {
-    color: yellow;
-    font-style: italic;
-  }
-
-  .syntax--markup.syntax--code {
-    //color: yellow;
-    //font-style: italic;
-  }
-
-  .syntax--raw.syntax--gfm.syntax--support.syntax--gfm {
-    color: yellow;
-  }
-
-  .syntax--link .syntax--entity {
-    color: yellow;
-  }
-  .syntax--critic.syntax--gfm {
-    .syntax--addition {
-      color: yellow;
-    }
-    .syntax--deletion {
-      color: yellow;
-    }
-    .syntax--substitution {
-      color: yellow;
-    }
-    .syntax--comment {
-      font-style: normal;
-      color: yellow;
-    }
-    .syntax--highlight {
-      color: yellow;
-    }
-  }
-  .syntax--comment.syntax--block.syntax--gfm {
-    font-style: italic;
-    color: yellow;
-  }
+    .syntax--punctuation {
+     opacity: 0.5;
+   }
 }
 
 .syntax--source.syntax--gfm.syntax--critic.syntax--gfm.syntax--comment {
-  font-style: normal;
-  color: yellow;
+	font-style: normal;
+	color: yellow;
 }
 
 .syntax--list.syntax--gfm {
-  color: yellow;
+	color: @orange;
+}
+//criticmarkup fixes
+
+.syntax--critic.syntax--gfm.syntax--addition {
+	//color: yellow;
 }
 
-//criticmarkup fixes
-.syntax--critic.syntax--gfm.syntax--addition {
-  color: yellow;
-}
 .syntax--critic.syntax--gfm.syntax--deletion {
-  color: yellow;
+	//color: yellow;
 }
+
 .syntax--critic.syntax--gfm.syntax--substitution {
-  color: yellow;
+	//color: yellow;
 }
+
 .syntax--critic.syntax--gfm.syntax--comment {
-  color: yellow;
+	//color: yellow;
 }
+
 .syntax--critic.syntax--gfm.syntax--highlight {
-  color: yellow;
+	//color: yellow;
 }

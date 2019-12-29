@@ -19,34 +19,34 @@
   }
 
   &.syntax--strike {
-    text-decoration: line-through;
-    color: yellow;
-    text-decoration-style: dashed; //IMPLEMENTED SOON, KEEPING IN TO REMIND ME
+    text-decoration: underline;
+    //color: @red;
+
   }
 
   &.syntax--substitution,
   &.syntax--changed {
-    color: yellow;
+    color: @orange;
   }
 
   &.syntax--heading {
     .syntax--heading-1{
-      color: mix(yellow, @syntax-text-color, 100);
+      color: mix(@blue, @syntax-text-color, 100);
     }
     .syntax--heading-2{
-      color: mix(yellow, @syntax-text-color, 90);
+      color: mix(@blue, @syntax-text-color, 90);
     }
     .syntax--heading-3{
-      color: mix(yellow, @syntax-text-color, 80);
+      color: mix(@blue, @syntax-text-color, 80);
     }
     .syntax--heading-4{
-      color: mix(yellow, @syntax-text-color, 60);
+      color: mix(@blue, @syntax-text-color, 60);
     }
     .syntax--heading-5{
-      color: mix(yellow, @syntax-text-color, 40);
+      color: mix(@blue, @syntax-text-color, 40);
     }
     .syntax--heading-6{
-      color: mix(yellow, @syntax-text-color, 20);
+      color: mix(@blue, @syntax-text-color, 20);
     }
   }
 
@@ -54,7 +54,7 @@
 
   &.syntax--inserted,
   &.syntax--addition {
-    color: yellow;
+    color: @green;
   }
 
   &.syntax--quote {
@@ -67,26 +67,29 @@
 
 
   &.syntax--deletion {
-    color: yellow;
+    color: @red;
   }
 
   &.syntax--link {
+    .syntax--string{
+      color: @syntax-text-color !important;
+    }
     //color: yellow;
 
     .syntax--string {
-      //color: yellow;
+      color: yellow;
     }
   }
 
   &.syntax--list {
     & > .syntax--punctuation {
-      color: yellow;
+      color: @orange;
     }
   }
 
   &.syntax--raw,
   &.syntax--code {
-    color: yellow;
+    color: @syntax-text-color;
   }
   .syntax--punctuation {
    opacity: 0.5;

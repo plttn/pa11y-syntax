@@ -18,14 +18,14 @@
     }
 
     &.syntax--hr {
-      color: yellow;
+      color: @silver;
     }
     &.syntax--quote {}
 
     &.syntax--link {
-      color: yellow;
+      color: @blue;
       .syntax--string {
-        color: yellow;
+        color: @aqua !important;
       }
       &.syntax--text {}
       &.syntax--destination {
@@ -95,12 +95,12 @@
 
     &.syntax--code {
       &:not(.syntax--fenced) {
-        background: fade(yellow, 5%)
+        background: fade(@silver, 10%)
       }
 
       &.syntax--fenced {
         .syntax--punctuation.syntax--md {
-          color: yellow;
+          color: @orange;
           font-style: italic;
         }
         &.syntax--info {}
@@ -111,7 +111,7 @@
 
     &.syntax--constant {
       &.syntax--language {
-        color: yellow;
+        color: @orange;
         font-style: italic;
       }
     }

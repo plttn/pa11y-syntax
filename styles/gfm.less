@@ -6,32 +6,32 @@
     &.syntax--heading {
       //color: yellow;
       font-weight: bold;
-      &.syntax--heading-1 {
-        color: mix(yellow, @syntax-text-color, 100);
-      }
-      &.syntax--heading-2 {
-        color: mix(yellow, @syntax-text-color, 90);
-      }
-      &.syntax--heading-3 {
-        color: mix(yellow, @syntax-text-color, 75);
-      }
-      &.syntax--heading-4 {
-        color: mix(yellow, @syntax-text-color, 60);
-      }
-      &.syntax--heading-5 {
-        color: mix(yellow, @syntax-text-color, 40);
-      }
-      &.syntax--heading-6 {
-        color: mix(yellow, @syntax-text-color, 30);
-      }
+    &.syntax--heading-1{
+      color: mix(@blue, @syntax-text-color, 100);
+    }
+    &.syntax--heading-2{
+      color: mix(@blue, @syntax-text-color, 90);
+    }
+    &.syntax--heading-3{
+      color: mix(@blue, @syntax-text-color, 80);
+    }
+    &.syntax--heading-4{
+      color: mix(@blue, @syntax-text-color, 60);
+    }
+    &.syntax--heading-5{
+      color: mix(@blue, @syntax-text-color, 40);
+    }
+    &.syntax--heading-6{
+      color: mix(@blue, @syntax-text-color, 20);
+    }
     }
 
     &.syntax--link {
-      color: yellow;
+      color: @teal;
     }
 
     &.syntax--bold {
-      color: desaturate(yellow, 10%);
+      //color: desaturate(yellow, 10%);
       font-weight: bold;
     }
 
@@ -77,7 +77,7 @@
   }
 
   .syntax--comment.syntax--hr.syntax--gfm {
-    color: yellow;
+    color: @silver;
   }
 
   .syntax--comment.syntax--quote.syntax--gfm {
